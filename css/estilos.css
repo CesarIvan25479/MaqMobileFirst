@@ -215,3 +215,80 @@ main{
 .main-tables-container p small{
     font-weight: 500;
 }
+.features-container{
+    width: 100%;
+    height: auto;
+    background-color:var(--warm-black);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.features-container img{
+    width: 4.5rem;
+    height: 2.4rem;
+    position: relative;
+    top: -1rem;
+    align-self: center;
+    transition: all 1s;
+    transform: scaleX(-1);
+}
+.features-body{
+    width: 28.8rem;
+    align-self: center;
+    padding-bottom: 5rem;
+}
+.features-body h2{
+    margin-top: 4.5rem;
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+.features-body .features-subtitle{
+    margin-top: 3rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.features-body .card-beneficio{
+    margin-top: 2rem;
+    background-color: #282623;
+    width: 100%;
+    height: auto;
+    border-radius: 0.4rem;
+    padding: 1.5rem 1.5rem;
+}
+.card-beneficio span{
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-bottom: 1rem;
+}
+.card-beneficio .clock{
+    background-image: url('../assets/icons/clock.svg');
+}
+.card-beneficio .dollar{
+    background-image: url('../assets/icons/dollar-sign.svg');
+}
+.card-beneficio .eye{
+    background-image: url('../assets/icons/eye.svg');
+}
+.card-beneficio .check{
+    background-image: url('../assets/icons/check-circle.svg');
+}
+.card-beneficio .card-beneficio-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+.card-beneficio .card-beneficio-descrip{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #808080;
+}
