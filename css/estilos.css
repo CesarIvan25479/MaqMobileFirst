@@ -159,12 +159,14 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 2.5rem;
 }
 .main-container-table{
     width: 19.7rem;
     background: var(--white);
     border-radius: 0.8rem;
     align-self: center;
+    font-family: "Inter",sa;
 }
 .main-tables-container h3{
     text-align: left;
