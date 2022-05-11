@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
     <title>Mobile First</title>
 </head>
 <body>
@@ -26,6 +27,7 @@
                 <h2>Visibilizamos todas las tasas de cambio.</h2>
                 <p>Treamos información en tiempo real de las cosas de cambio y las monedas mas importantes del mundo.</p>
             </div>
+            <article class="scroll-tables">
             <section class="main-tables-container">
                 <h3>Monedas</h3>
                 <div class="main-container-table">
@@ -93,12 +95,47 @@
                 </div>
                 <p>Actualizado: <small>19 Julio 23:45</small></p>
             </section>
+            <section class="main-tables-container">
+                <h3>Comisiones</h3>
+                <div class="main-container-table">
+                    <table>
+                        <thead>
+                            <tbody>
+                                <tr>
+                                    <td class="table-moneda">Bitrade</td>
+                                    <td class="table-valor">$ 12.96 </span></td>
+                                </tr>
+                                <tr>
+                                    <td class="table-moneda">Bitpreco</td>
+                                    <td class="table-valor">$ 13.07 </span></td> 
+                                </tr>
+                                <tr>
+                                    <td class="table-moneda">Novadax</td>
+                                    <td class="table-valor">$ 13.15 </span></td>
+                                </tr>
+                                <tr>
+                                    <td class="table-moneda">Cointext</td>
+                                    <td class="table-valor">$ 14.96 </span></td>
+                                </tr>
+                                <tr>
+                                    <td class="table-moneda">Rip</td>
+                                    <td class="table-valor">$ 2.15 </td>
+                                </tr>
+                                
+                            </tbody>
+                        </thead>
+                    </table>
+                </div>
+                <p>Actualizado: <small>19 Julio 23:45</small></p>
+            </section>
+        </article>
         </section>
         <section class="features-container">
             <img src="./assets/icons/papa.svg" alt="">
             <div class="features-body">
                 <h2>Creamos un Producto sin comparación</h2>
                 <p class="features-subtitle">Confiable y Deseñado para su uso diario</p>
+                <article class="beneficio-media-query">
                 <div class="card-beneficio">
                     <span class="clock"></span>
                     <p class="card-beneficio-title">Tiempo Real</p>
@@ -119,6 +156,7 @@
                     <p class="card-beneficio-title">información confiable</p>
                     <p class="card-beneficio-descrip">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan</p>
                 </div>
+            </article>
             </div>
         </section>
         <section class="bitcoin-img-container">
@@ -161,6 +199,17 @@
             </section>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="left">
+            <ul>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Crunchbase</a></li>
+                <li><a href="#">Hackernews</a></li>
+            </ul>
+        </section>
+        <section class="rigth">
+            <img src="./assets/icons/papa.svg" alt="Logo de Batatabit 2020">
+        </section>
+    </footer>
 </body>
 </html>

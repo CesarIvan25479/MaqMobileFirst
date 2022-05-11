@@ -6,7 +6,7 @@
 5. Otros
 */
 :root{
-    --bitcoin-orange: #F7931A;
+    --bitcoin-orange: #2f99fd;
     --soft-orange: #FFE9D5;
     --secondary-blue: #1A9AF7;
     --soft-blue: #E7F5FF;
@@ -155,11 +155,15 @@ main{
 }
 .main-tables-container{
     height: auto;
-    width: 100%;
+    scroll-snap-align: center;
+    width: 50%;
+    min-width: 20rem;
+    max-width: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 2.5rem;
+    margin: 50px 1px 50px;
+    
 }
 .main-container-table{
     width: 19.7rem;
@@ -258,10 +262,11 @@ main{
 .features-body .card-beneficio{
     margin-top: 2rem;
     background-color: #282623;
-    width: 100%;
-    min-height: 15rem;
+    width: 288px;
+    height: 152px;
     border-radius: 0.4rem;
     padding: 1.5rem 1.5rem;
+    margin: 10px;
 }
 .card-beneficio span{
     display: inline-block;
@@ -338,6 +343,15 @@ main{
     line-height: 1.8rem;
     color: #757575;
 }
+.scroll-tables{
+    display: flex;
+    height: auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin: 0 20px;
+    justify-content: center;
+}
 .plans-container--slider{
     display: flex;
     height: 316px;
@@ -345,9 +359,17 @@ main{
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     margin: 0 20px;
+    justify-content: center;
 }
+.scroll-tables::-webkit-scrollbar {
+    background-color: #d7edff;
+    height: 3px;
+  }
+.scroll-tables::-webkit-scrollbar-thumb {
+    background-color: var(--bitcoin-orange);
+  }
 .plans-container--slider::-webkit-scrollbar {
-    background-color: var(--soft-orange);
+    background-color: #d7edff;
     height: 3px;
   }
   .plans-container--slider::-webkit-scrollbar-thumb {
@@ -357,7 +379,7 @@ main{
     position: relative;
     scroll-snap-align: center;
     width: 50%;
-    min-width: 23rem;
+    min-width: 19rem;
     max-width: 30rem;
     height: 25rem;
     margin: 50px 5px 0;
@@ -421,4 +443,29 @@ main{
     height: 2rem;
     background-image: url('../assets/icons/arrow-right.svg');
     vertical-align: text-bottom;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li{
+    margin: 10px 0;
+}
+.left a{
+    text-decoration: none;
+    color: var(--white);
 }

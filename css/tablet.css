@@ -1,0 +1,10 @@
+.beneficio-media-query{
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.features-body{
+    width: 100%;
+}
